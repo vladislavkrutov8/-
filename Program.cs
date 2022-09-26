@@ -12,3 +12,13 @@ void SecondArray(string[] array1, string[] array2) // Задаем метод, �
         }
     }
 }
+void PrintArray(string[] array)// Задаем метод, который будет выводить массив SecondArray
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+SecondArray(array1, array2);
+PrintArray(array2);
